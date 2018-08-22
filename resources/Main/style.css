@@ -1,0 +1,149 @@
+/*-----------------------------------------------------------*/
+
+/* BASIC SETUP*/
+
+/*-----------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: rgb(146, 146, 146);
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+/*-----------------------------------------------------------*/
+
+/* REUSABLE COMPONENTS*/
+
+/*-----------------------------------------------------------*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+
+/*-----------------------------------------------------------*/
+
+/* HEADER*/
+/*-----------------------------------------------------------*/
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.700), rgba(33, 47, 145, 0.80)), url(img/bkg/streetRunSmall.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.white-logo {
+    height: 200px;
+    width: auto;
+    float: left;
+    transform: translate(-90%, 0%);
+    margin-top: 20px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 70px;
+    transform: translate(40%,0%);
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 60px;
+}
+
+.main-nav li a:link, 
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+border-bottom:2px solid #c9710e;
+
+
+
+}
+/*-----------------------------------------------------------*/
+
+/* HEADINGS*/
+
+/*-----------------------------------------------------------*/
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 200%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+
+
+/*-----------------------------------------------------------*/
+
+/* BUTTONS*/
+
+/*-----------------------------------------------------------*/
+
+.btn:link, .btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 200;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link, .btn-full:visited {
+    background-color: #f0932b;
+    border: 1px solid #f0932b;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link, .btn-ghost:visited {
+    border: 1px solid #f0932b;
+    color: #f0932b;
+}
+
+.btn:hover, .btn:active {
+    background-color: #c9710e;
+}
+
+.btn-full:hover, .btn-full:active {
+    border: 1px solid #c9710e;
+}
+
+.btn-ghost:hover, .btn-ghost:active {
+    border: 1px solid #c9710e;
+    color: #fff;
+}
