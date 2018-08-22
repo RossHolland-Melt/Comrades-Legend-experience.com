@@ -29,11 +29,18 @@ html {
     margin: 0 auto;
 }
 
+section {
+    padding: 80px 0;
+}
 
+.box {
+    padding: 1%;
+}
 
 /*-----------------------------------------------------------*/
 
 /* HEADER*/
+
 /*-----------------------------------------------------------*/
 
 header {
@@ -63,7 +70,7 @@ header {
     float: right;
     list-style: none;
     margin-top: 70px;
-    transform: translate(40%,0%);
+    transform: translate(40%, 0%);
 }
 
 .main-nav li {
@@ -71,8 +78,7 @@ header {
     margin-left: 60px;
 }
 
-.main-nav li a:link, 
-.main-nav li a:visited {
+.main-nav li a:link, .main-nav li a:visited {
     padding: 8px 0;
     color: #fff;
     text-decoration: none;
@@ -82,31 +88,98 @@ header {
     transition: border-bottom 0.2s;
 }
 
-.main-nav li a:hover,
-.main-nav li a:active{
-border-bottom:2px solid #c9710e;
-
-
-
+.main-nav li a:hover, .main-nav li a:active {
+    border-bottom: 2px solid #c9710e;
 }
+
 /*-----------------------------------------------------------*/
 
 /* HEADINGS*/
 
 /*-----------------------------------------------------------*/
 
+h1, h2, h3 {
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
 h1 {
-    margin-top: 0;
-    margin-bottom: 20px;
     color: #fff;
     font-size: 200%;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    margin-top: 0;
+    margin-bottom: 20px;
     word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: #2B2B2E;
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: rgba(33, 47, 145, 0.80);
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+/*-----------------------------------------------------------*/
+
+/* PARAGRAPGHS*/
+
+/*-----------------------------------------------------------*/
+
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
 }
 
 
+
+/*-----------------------------------------------------------*/
+
+/* HOTELS*/
+
+/*-----------------------------------------------------------*/
+
+.hotel .long-copy{
+margin-bottom: 30px;
+
+}
+
+/*-----------------------------------------------------------*/
+
+/* ICONS*/
+
+/*-----------------------------------------------------------*/
+
+i {
+    color: rgba(33, 47, 145, 0.80);
+}
+
+.icon-big {
+    font-size: 300%;
+    display: block;
+}
 
 /*-----------------------------------------------------------*/
 
@@ -146,4 +219,45 @@ h1 {
 .btn-ghost:hover, .btn-ghost:active {
     border: 1px solid #c9710e;
     color: #fff;
+}
+
+/*-----------------------------------------------------------*/
+
+/* HOTELS*/
+
+/*-----------------------------------------------------------*/
+
+.hotel-gallery {
+    padding: 0;
+}
+
+.hotel-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.hotel-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.hotel-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.hotel-photo img {
+    opacity: 0.6;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.hotel-photo img:hover {
+    opacity: 1;
+    transform: scale(1.05);
 }
