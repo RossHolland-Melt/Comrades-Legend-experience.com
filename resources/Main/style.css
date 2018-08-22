@@ -18,6 +18,14 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+.clearfix{zoom:1}
+.clearfix::after{
+    content:'.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
 /*-----------------------------------------------------------*/
 
 /* REUSABLE COMPONENTS*/
@@ -153,17 +161,14 @@ h3 {
     line-height: 145%;
 }
 
-
-
 /*-----------------------------------------------------------*/
 
 /* HOTELS*/
 
 /*-----------------------------------------------------------*/
 
-.hotel .long-copy{
-margin-bottom: 30px;
-
+.hotel .long-copy {
+    margin-bottom: 30px;
 }
 
 /*-----------------------------------------------------------*/
@@ -260,4 +265,44 @@ i {
 .hotel-photo img:hover {
     opacity: 1;
     transform: scale(1.05);
+}
+
+/*-----------------------------------------------------------*/
+
+/* STEPS*/
+
+/*-----------------------------------------------------------*/
+
+.steps-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+
+.steps-box:last-child {
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.blue-logo {
+    width: 80%;
+    padding-top: 10%
+}
+
+.step {
+    margin-bottom: 50px;
+}
+
+.step div {
+    color: rgba(33, 47, 145, 0.80);
+    border: 2px solid rgba(33, 47, 145, 0.80);
+    display: inline-block;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 150%;
+    margin-right: 25px;
 }
