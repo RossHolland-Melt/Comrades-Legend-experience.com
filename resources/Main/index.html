@@ -3,9 +3,12 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Comrades Legend Experience</title>
     <link rel="stylesheet" href="CSS/grid.css">
+
     <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/queries.css">
     <link href="https://unpkg.com/ionicons@4.3.0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Raleway" rel="stylesheet">
@@ -17,13 +20,26 @@
         <nav>
             <div class="row">
                 <img src="img\logos\TCLE-Logo-final-white-03.png" alt="CLE White Logo" class="white-logo">
+                <img src="img\logos\TCLE-Logo-final-black-02.png" alt="CLE Black Logo" class="black-logo">
                 <ul class="main-nav ">
-                    <li><a href="#">Comrades</a></li>
-                    <li><a href="#">Barry Holland</a></li>
-                    <li><a href="#">Bruce Fordyce</a></li>
-                    <li><a href="#">accommodation</a></li>
-                    <li><a href="#">Itenery</a></li>
-                    <li><a href="#" id="contactModalBtn">Contact us</a></li>
+                    <li>
+                        <a href="#comrades" class="scroll">Comrades</a>
+                    </li>
+                    <li>
+                        <a href="#barry" class="scroll">Barry Holland</a>
+                    </li>
+                    <li>
+                        <a href="#bruce" class="scroll">Bruce Fordyce</a>
+                    </li>
+                    <li>
+                        <a href="#accom" class="scroll">accommodation</a>
+                    </li>
+                    <li>
+                        <a href="#ite" class="scroll">Itenery</a>
+                    </li>
+                    <li>
+                        <a href="#contactModalBtn" id="contactModalBtn">Contact us</a>
+                    </li>
 
                 </ul>
 
@@ -31,38 +47,35 @@
 
         </nav>
         <div class="hero-text-box">
-            <h1>The Comrades legend experience.</h1>
-            <a class="btn btn-full " href="#">Sign me up!</a>
-            <a class="btn btn-ghost" href="#">Tell me more?</a>
+            <h1> <strong>The Comrades legend experience.</strong></h1>
+            <p class=".long-copy">Running the Comrades Marathon is a unique challenge. The Comrades Legend Experience offers
+                you the opportunity to be hosted by Barry Holland one of the true Legends of the race. Barry will mentor
+                you, take you over the race course, introduce you to Bruce Fordyce at the Pre-Comrades breakfast, be there
+                on race day and then share all the war stories of the great day at the Aches and Pains Party. Don’t miss
+                this opportunity to learn and feel the passion from one of the all-time Comrades Legends.
+            </p>
+
+            <a class="btn btn-full scroll" href="#signUp">Sign me up!</a>
+            <a class="btn btn-ghost scroll" href="#comrades">Tell me more?</a>
         </div>
 
     </header>
-    <!-- 
-    /////////////////////////////////////////
-    B and B Section TO DO LIST :::
 
-    Need to finish both the legend sections.
-    This includes:
-     
-    *adding gallery showcase to both.
-    *adding images to the gallery
-    *adding hover effects to the images
-    *add a 'see records button ' and 'more about button' to both.
-
-    \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
--->
-    <section class="comrades-section">
+    <section class="comrades-section " id="comrades">
         <div class="row">
-            <h2>The famous <span class="super-important">Comrades Marathon</span></h2>
+            <h2>The famous <span class="super-important"><strong> Comrades Marathon</strong></span></h2>
         </div>
 
         <div class="row">
-            <div class="col span-1-of-4">
+            <div class="col span-1-of-2">
+
+                <div class="img-contain">
+                    <img src="img/ComradesGen/comradesGen/_TOB7793.jpg" alt="">
+                </div>
 
 
             </div>
-            <div class="col span-2-of-4">
+            <div class="col span-1-of-2">
                 <p class="long-copy">2019 will see the 94th running of the Comrades Marathon which is popularly regarded
                     as the greatest road race in the world. Run over a gruelling 90km course, the race alternates annually
                     between the Up and Down run between Durban and Pietermaritzburg. Founded in 1923 by Vic Clapham as a
@@ -72,74 +85,143 @@
 
 
 
-                <div class="col span-1-of-4">
+
+
+            </div>
+            <a href="http://www.comrades.com/" target="_blank" class="btn btn-ghost">Enter the comrades Marathon </a>
+        </div>
+
+
+
+
+    </section>
+
+    <section class="barry-section" id="barry">
+        <div class="row">
+            <h2> <span class="super-important"><strong>Barry Holland</strong> </span> ,comrades legend </h2>
+        </div>
+
+        <div class="row">
+
+            <!-- BARRY HOLLAND TEXT  -->
+            <div class="col span-1-of-2">
+                <p class="long-copy"><span class="super-important"><strong> Barry Holland</strong></span> holds the record
+                    for the <strong> most medals in the history of the Comrades</strong> Marathon. With a first medal in
+                    1973, he has completed the race consecutively over the last 46 years. Over his Comrades career he has
+                    earned 22 silver medals (under 7:30) with a personal best of 6:29 on the Down run and 6:34 on the Up
+                    run. Barry has spoken and written extensively on distance running and the Comrades Marathon. His book,
+                    The Barry Holland Story, is a must read for all Comrades Runners.
+                </p>
+
+
+                <a href="#barry" class="btn btn-ghost" id="barryModalBtn">See Comrades records</a>
+
+
+
+
+
+
+            </div>
+
+            <!-- BARRY HOLLAND IMAGE SLIDER  -->
+
+
+
+            <div class="col span-1-of-2">
+
+
+
+
+
+
+
+                <!-- THIS IS WHERE THE IMAGES GO  -->
+                <div class="slider-inner">
+
+                    <img src="img/ComradesGen/barryIMG/16d59550be588c7b640badd74dac4bdd_DSC_3183 (2).JPG" alt="bh1" class="active">
+                    <img src="img/ComradesGen/barryIMG/4D7E8785-0840-5162-0693-20F294AD8317 (1).JPG" alt="bh2">
+                    <img src="img/ComradesGen/barryIMG/4D7E8785-0840-5162-0693-20F294AD8317.JPG" alt="bh3">
+                    <img src="img/ComradesGen/barryIMG/554a3f6837026c8d278762b107a36f0e_DSC_3542 (1).JPG" alt="bh4">
+                    <img src="img/ComradesGen/barryIMG/8357ec119e7bcf5aa6580bddeb005fc3_DSC_7623 (1).JPG" alt="bh5">
+                    <img src="img/ComradesGen/barryIMG/8357ec119e7bcf5aa6580bddeb005fc3_DSC_7623.JPG" alt="bh6">
+                    <img src="img/ComradesGen/barryIMG/F2E3F646-3DF3-5D27-FE38-8E9CAE200DD3.JPG" alt="bh8">
+                    <img src="img/ComradesGen/barryIMG/fa3710cfffcdbb0b9ed714fa6d1987a4_DSC_3624.JPG" alt="bh9">
+
+
+                </div>
+                <div class="prev">
+                    <=</div>
+
+
+                        <div class="next"> => </div>
+
+
+
+
 
 
                 </div>
 
             </div>
 
-        </div>
-
 
 
 
     </section>
 
-    <section class="barry-section">
+    <section class="bruce-section clearfix" id="bruce">
         <div class="row">
-            <h2>The comrades legend <span class="super-important"> Barry Holland</span> </h2>
+            <h2> Comrades legend ,<span class="super-important"> <strong>Bruce Fordyce</strong> </span> </h2>
         </div>
 
-        <div class="row">
+        <div class="row ">
+
+
 
             <div class="col span-1-of-2">
-                <p class="long-copy">Barry Holland holds the record for the most medals in the history of the Comrades Marathon.
-                    With a first medal in 1973, he has completed the race consecutively over the last 46 years. Over his
-                    Comrades career he has earned 22 silver medals (under 7:30) with a personal best of 6:29 on the Down
-                    run and 6:34 on the Up run. Barry has spoken and written extensively on distance running and the Comrades
-                    Marathon. His book, The Barry Holland Story, is a must read for all Comrades Runners.</p>
+                <p class="long-copy"><span class="super-important"><strong>Bruce Fordyce </strong></span> is widely considered
+                    as <strong>the greatest Comrades runner of all time</strong>. He won the race nine times which is four
+                    more than anyone else in history. In the 1980’s Bruce dominated the Comrades and World Ultra distance
+                    running and simultaneously held the Up and Down records. Known for his educated approach to training
+                    and nutrition, he was the master tactician, often waiting for the last few kilometers to strike. Bruce
+                    has spoken on the Comrades and distance running all over the world and is the author of several books.</p>
 
 
-                <a href="#" class="btn btn-ghost">See Comrades records</a </div>
-                <div class="col span-1-of-2">
+                <a href="#bruce" class="btn btn-ghost" id="bruceModalBtn">See Comrades records</a>
+
+            </div>
+            <div class="col span-1-of-2 ">
+                <!-- THIS IS WHERE THE IMAGES GO  -->
+                <div class="slider-inner-bruce ">
+
+                    <img src="img/ComradesGen/barryIMG/16d59550be588c7b640badd74dac4bdd_DSC_3183 (2).JPG" alt="bh1" class="active-bruce">
+                    <img src="img/ComradesGen/barryIMG/4D7E8785-0840-5162-0693-20F294AD8317 (1).JPG" alt="bh2">
+                    <img src="img/ComradesGen/barryIMG/4D7E8785-0840-5162-0693-20F294AD8317.JPG" alt="bh3">
+                    <img src="img/ComradesGen/barryIMG/554a3f6837026c8d278762b107a36f0e_DSC_3542 (1).JPG" alt="bh4">
+                    <img src="img/ComradesGen/barryIMG/8357ec119e7bcf5aa6580bddeb005fc3_DSC_7623 (1).JPG" alt="bh5">
+                    <img src="img/ComradesGen/barryIMG/8357ec119e7bcf5aa6580bddeb005fc3_DSC_7623.JPG" alt="bh6">
+                    <img src="img/ComradesGen/barryIMG/F2E3F646-3DF3-5D27-FE38-8E9CAE200DD3.JPG" alt="bh8">
+                    <img src="img/ComradesGen/barryIMG/fa3710cfffcdbb0b9ed714fa6d1987a4_DSC_3624.JPG" alt="bh9">
+
+
+                </div>
+
+                <div class="prev-bruce">
+                    <=</div>
+
+
+
+                        <div class="next-bruce"> => </div>
+
+
+
+
 
 
                 </div>
 
             </div>
 
-        </div>
-
-
-
-
-    </section>
-
-    <section class="bruce-section">
-        <div class="row">
-            <h2>The comrades legend <span class="super-important">Bruce Fordyce</span> </h2>
-        </div>
-
-        <div class="row">
-            <div class="col span-1-of-2">
-
-
-            </div>
-
-            <div class="col span-1-of-2">
-                <p class="long-copy">Bruce Fordyce is widely considered as the greatest Comrades runner of all time. He won
-                    the race nine times which is four more than anyone else in history. In the 1980’s Bruce dominated the
-                    Comrades and World Ultra distance running and simultaneously held the Up and Down records. Known for
-                    his educated approach to training and nutrition, he was the master tactician, often waiting for the last
-                    few kilometers to strike. Bruce has spoken on the Comrades and distance running all over the world and
-                    is the author of several books.</p>
-
-
-                <a href="#" class="btn btn-ghost">See Comrades records</a>
-
-            </div>
-
 
 
 
@@ -147,10 +229,10 @@
     </section>
 
 
-    <section class="hotel">
+    <section class="hotel " id="accom">
         <div class="row">
             <h2>Your spectacular accommodation</h2>
-            <p class="long-copy "><span class="super-important hotel-name" >Southern Sun Elangeni Hotel</span></p>
+            <p class="long-copy "><span class="super-important hotel-name">Southern Sun Elangeni Hotel</span></p>
         </div>
 
         <div class="row">
@@ -252,13 +334,224 @@
 
 
 
+    <section id="ite" class="itinerary">
+        <div class="row">
+            <h2>itinerary</h2>
+        </div>
+        <div id="slider">
+            <div class="slide active-slide">
+                <h3> <span class="super-important"><strong>Day 1</strong></span> - Thursday 6 June 2019</h3>
+                <div class="center-contain">
+                    <ul>
+                        <li>
+                            On arrival at Durban King Shaka International Airport, you will be met and transferred to your hotel in Durban where you
+                            will stay for 5 nights.
+                        </li>
+
+                        <li>
+                            AM/PM Durban Exhibition Centre race expo: The Comrades Legend hospitality desk will assist you with scheduled shuttle times
+                            to collect your Comrades race number, and goodie bag. Remember your ChampionChip must be attached
+                            to your running shoes asap.
+                        </li>
+
+                        <li>
+                            14h00 Official Hotel check-in time.
+                        </li>
+                        <li>
+                            Lunch and Dinner is at leisure for you own account.
+                        </li>
+                        <li>
+                            Overnight: Southern Sun Elangeni & Maharani.
+                        </li>
+                    </ul>
+
+
+
+                </div>
+
+            </div>
+
+            <div class="slide ">
+                <h3> <span class="super-important"><strong>Day 2</strong></span> - Friday 7 June 2019</h3>
+                <div class="center-contain">
+                    <ul>
+                        <li>
+                            06h30-09h30 Breakfast at your hotel is included.
+                        </li>
+
+                        <li>
+                            08h30 coach departs to Comrades race expo (if you arrived late on Thursday evening), returning to the hotel by 09h45.
+                        </li>
+
+                        <li>
+                            At 10h00 the coach departs on the Comrades Marathon race route inspection tour with legend Barry Holland.
+                            <br>Travel from Durban to Pietermaritzburg for this exclusive race briefing and receive an informative
+                            race booklet
+
+                        </li>
+
+                        <li>
+                            12h30 Lunch & refreshments on route included.
+                        </li>
+
+                        <li>
+                            15h30 the coach will return to hotel.
+                        </li>
+
+                        <li>
+                            Dinner is at leisure and for your own account.
+                        </li>
+
+                        <li>
+                            Overnight: Southern Sun Elangeni & Maharani
+                        </li>
+                    </ul>
+
+
+
+                </div>
+
+            </div>
+
+            <div class="slide ">
+                <h3> <span class="super-important"><strong>Day 3</strong></span> - Saterday 8 June 2019</h3>
+                <div class="center-contain">
+                    <ul>
+                        <li>
+07h00 Early morning 4km jog on beachfront promenade with legend Barry Holland, leg loosener! 
+                        </li>
+
+                        <li>
+                                09h00-11h00 Elangeni, Suite 5, Private Breakfast with Comrades legends Barry Holland and Bruce Fordyce (included)
+                        </li>
+
+                        <li>
+                                Remainder of day at leisure, Lunch and Dinner for your own account.
+                        </li>
+                        <li>
+                                It’s time to prepare your final race kit, enjoy your pre-race dinner and get plenty or rest!
+                        </li>
+                        <li>
+                                Overnight: Southern Sun Elangeni & Maharani
+                        </li>
+                    </ul>
+
+
+
+                </div>
+
+            </div>
+
+
+            <div class="slide">
+                <h3> <span class="super-important"><strong>Day 4</strong></span> - Sunday 9 June 2019</h3>
+                <div class="center-contain">
+                    <ul>
+                        <li>
+
+                        </li>
+
+                        <li>
+
+                        </li>
+
+                        <li>
+
+                        </li>
+                        <li>
+
+                        </li>
+                        <li>
+
+                        </li>
+                    </ul>
+
+
+
+                </div>
+
+            </div>
+
+
+
+
+            <div class="slide ">
+                <h3> <span class="super-important"><strong>Day 5</strong></span> - Monday 10 June 2019</h3>
+                <div class="center-contain">
+                    <ul>
+                        <li>
+
+                        </li>
+
+                        <li>
+
+                        </li>
+
+                        <li>
+
+                        </li>
+                        <li>
+
+                        </li>
+                        <li>
+
+                        </li>
+                    </ul>
+
+
+
+                </div>
+
+            </div>
+
+
+            <div class="slide ">
+                <h3> <span class="super-important"><strong>Day 6</strong></span> - Tuesday 11 June 2019</h3>
+                <div class="center-contain">
+                    <ul>
+                        <li>
+
+                        </li>
+
+                        <li>
+
+                        </li>
+
+                        <li>
+
+                        </li>
+                        <li>
+
+                        </li>
+                        <li>
+
+                        </li>
+                    </ul>
+
+
+
+                </div>
+
+            </div>
 
 
 
 
 
 
-    <section class="section-steps">
+
+        </div>
+        <p id="left-arrow">
+            <</p>
+                <p id="right-arrow">></p>
+
+    </section>
+
+
+
+
+
+    <section class="section-steps" id="steps">
         <div class="row">
             <h2>How to sign up and purchase a package</h2>
 
@@ -301,7 +594,7 @@
 
     </section>
 
-    <section class="section-packages">
+    <section class="section-packages" id="signUp">
         <div class="row">
             <h2>Sign up here</h2>
 
@@ -320,7 +613,7 @@
                     </ul>
                 </div>
                 <div>
-                    <a href="#"  class="btn btn-full">Sign up now</a>
+                    <a href="#" class="btn btn-full">Sign up now</a>
                 </div>
             </div>
 
@@ -342,23 +635,35 @@
                 <ul class="footer-nav ">
 
 
-                    <li><a href="# ">Comrades</a></li>
-                    <li><a href="# ">Barry Holland</a></li>
-                    <li><a href="# ">Bruce Fordyce</a></li>
-                    <li><a href="# ">accommodation</a></li>
-                    <li><a href="# ">Itenery</a></li>
-                    <li><a href="#" id="contactModalBtn" >Contact us</a></li>
+                    <li>
+                        <a href="#comrades" class="scroll">Comrades</a>
+                    </li>
+                    <li>
+                        <a href="#barry" class="scroll">Barry Holland</a>
+                    </li>
+                    <li>
+                        <a href="#bruce" class="scroll">Bruce Fordyce</a>
+                    </li>
+                    <li>
+                        <a href="#accom" class="scroll">accommodation</a>
+                    </li>
+                    <li>
+                        <a href="#ite" class="scroll">Itenery</a>
+                    </li>
+                    <li>
+                        <a href="#contactModalBtn2" id="contactModalBtn2">Contact us</a>
+                    </li>
 
 
                 </ul>
             </div>
             <div class="col span-1-of-2 ">
                 <ul class="social-icons ">
-                    <li><a href="# "><svg xmlns="http://www.w3.org/2000/svg " x="0px " y="0px " width="100 " height="100 "
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg " x="0px " y="0px " width="100 " height="100 "
                                 viewBox="0 0 50 50 " style="fill:#f0932b; "> <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z
                         M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z "></path></svg></a></li>
 
-                    <li><a href="# "><svg xmlns="http://www.w3.org/2000/svg " x="0px " y="0px " width="100 " height="100 "
+                    <li><a href="# "><svg xmlns="http://www.w3.org/2000/svg " x="0px " y="0px " width="120 " height="120 "
                                 viewBox="0 0 50 50 " style="fill: #f0932b; "> <path d="M 29.638672 19.832031 L 25.330078 28.347656 L 23.916016 26.261719 C 24.376016
                         26.047719 24.773406 25.715828 25.066406 25.298828 C 25.357406 24.857828 25.505281 24.336641 25.488281
                         23.806641 C 25.492281 23.442641 25.429734 23.080234 25.302734 22.740234 C 25.183734 22.431234 25.004391
@@ -411,9 +716,9 @@
     </footer>
 
 
-    <!-- contact form model popup-->
 
-    <div id="contactModal" class="modal">
+
+    <div id="contactModal" class="modal-contact">
         <div class="modal-content">
             <div id="closeBtn" class="closeBtn"> &times;</div>
             <h2> message us</h2>
@@ -472,7 +777,66 @@
         </div>
 
     </div>
+
+
+    <!-- Barry comrades records  model popup-->
+
+    <div id="barryModal" class="modal-barry">
+        <div class="modal-content-barry">
+            <div id="closeBtn-barry" class="closeBtn-barry"> &times;</div>
+            <h2> Barry Hollands Comrades Record</h2>
+            <div class="row">
+                <img src="img/records/barry.PNG" alt="Barry comrades records">
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="bruceModal" class="modal-bruce">
+        <div class="modal-content-bruce">
+            <div id="closeBtn-bruce" class="closeBtn-bruce"> &times;</div>
+            <h2> Bruce Fordyces Comrades Record</h2>
+            <div class="row">
+                <img src="img/records/bruce.PNG" alt="Barry comrades records">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--
+       <div id="SignUpModal" class="modal-signup">
+        <div class="modal-content-signup">
+            <div id="closeBtn-signup" class="closeBtn-signup"> &times;</div>
+            <h2> Sign Up</h2>
+            <div class="row">
+
+
+            </div>
+
+        </div>
+
+    </div>
+ 
+-->
+
+
+
+
+
+
+
+    <!--<script src="Javascript/jquery.waypoints.min.js "></script>-->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="Javascript/smoothscroll.js "></script>
     <script src="Javascript/modal.js "></script>
+    <script src="Javascript/script.js "></script>
 </body>
 
 
