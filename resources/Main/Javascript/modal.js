@@ -4,14 +4,14 @@
 
 document.getElementById('contactModalBtn').addEventListener('click', function (e) {
     document.querySelector('.modal-contact').style.display = 'flex';
-e.preventDefault;
+    e.preventDefault;
 
 });
 
 
 document.getElementById('contactModalBtn2').addEventListener('click', function (e) {
     document.querySelector('.modal-contact').style.display = 'flex';
-e.preventDefault;
+    e.preventDefault;
 });
 
 
@@ -27,7 +27,7 @@ document.querySelector('.closeBtn').addEventListener('click', function () {
 
 document.getElementById('barryModalBtn').addEventListener('click', function (e) {
     document.querySelector('.modal-barry').style.display = 'flex';
-e.preventDefault;
+    e.preventDefault;
 
 });
 
@@ -35,7 +35,7 @@ document.querySelector('.closeBtn-barry').addEventListener('click', function () 
     document.querySelector('.modal-barry').style.display = 'none';
 
 });
-
+ 
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -43,7 +43,7 @@ document.querySelector('.closeBtn-barry').addEventListener('click', function () 
 
 document.getElementById('bruceModalBtn').addEventListener('click', function (e) {
     document.querySelector('.modal-bruce').style.display = 'flex';
-e.preventDefault;
+    e.preventDefault;
 
 });
 
@@ -58,7 +58,7 @@ document.querySelector('.closeBtn-bruce').addEventListener('click', function () 
 
 document.getElementById('signUpModalBtn').addEventListener('click', function (e) {
     document.querySelector('.modal-signup').style.display = 'flex';
-e.preventDefault;
+    e.preventDefault;
 
 });
 

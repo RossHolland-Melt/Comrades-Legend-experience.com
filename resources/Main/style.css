@@ -393,7 +393,16 @@ i {
 /*-----------------------------------------------------------*/
 
 .section-steps {
-    background-color: #fff/*very slight grey tinge*/
+    margin-top: 10%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.500), rgba(255, 255, 255, 0.800)), url(img/ComradesGen/comradesGen/_TOB7932.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section-steps h2 {
+    font-weight: 400;
 }
 
 .steps-box:first-child {
@@ -409,16 +418,22 @@ i {
 
 .blue-logo {
     width: 80%;
-    padding-top: 10%
+    padding-top: 5%
 }
 
 .step {
     margin-bottom: 50px;
 }
 
+.step p {
+    color: #2B2B2E;
+    padding-top: 10px;
+    font-weight: 500
+}
+
 .step div {
     color: rgba(33, 47, 145, 0.80);
-    border: 2px solid rgba(33, 47, 145, 0.80);
+    border: 3px solid rgba(33, 47, 145, 0.80);
     display: inline-block;
     border-radius: 50%;
     height: 50px;
@@ -427,6 +442,7 @@ i {
     padding: 5px;
     float: left;
     font-size: 150%;
+    font-weight: 500;
     margin-right: 25px;
 }
 
@@ -436,12 +452,23 @@ i {
 
 /*-----------------------------------------------------------*/
 
+.section-packages {
+    margin-bottom: 10%;
+}
+
 .package-box {
     background-color: #fff;
     border-radius: 5px;
     width: 50%;
     margin-left: 25%;
     box-shadow: 3px 6px 8px #00000054;
+}
+
+.package-box:hover {
+    border-radius: 7px;
+    width: 50%;
+    margin-left: 25%;
+    box-shadow: 5px 8px 8px #00000054;
 }
 
 .package-box div {
@@ -467,6 +494,7 @@ i {
 
 .package-box ul li {
     padding: 5px 0;
+    margin-top: 10px;
 }
 
 .section-packages .btn {
@@ -573,7 +601,7 @@ textarea {
 /*-----------------------------------------------------------*/
 
 .modal-contact {
-    display: none;
+    display: flex;
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -649,6 +677,50 @@ textarea {
 
 /*-----------------------------------------------------------*/
 
+/* MODAL SIGN UP */
+
+/*-----------------------------------------------------------*/
+
+.modal-signup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.500);
+}
+.modal-signup .row{
+ margin-top: 10%;
+}
+.closeBtn-signup {
+    color: #ccc;
+    float: right;
+    font-size: 40px;
+}
+
+.closeBtn-signup:hover, .closeBtn-signup:focus {
+    color: rgba(33, 47, 145, 0.80);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content-signup {
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 10% auto;
+    padding: 20px;
+    width: 50%;
+    height: 50%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.200), 0 7px 20px 0 rgba(0, 0, 0, 0.170);
+    overflow: auto;
+}
+
+
+/*-----------------------------------------------------------*/
+
 /* MODAL BRUCE */
 
 /*-----------------------------------------------------------*/
@@ -676,7 +748,6 @@ textarea {
     text-decoration: none;
     cursor: pointer;
 }
-
 
 /*-----------------------------------------------------------*/
 
@@ -763,19 +834,30 @@ textarea {
 /* ITEN SLIDER */
 
 /*-----------------------------------------------------------*/
-.itinerary h3{
 
+.itinerary h3 {
     text-align: center;
     text-emphasis: bold;
 }
 
-.itinerary .center-contain{
-margin-left: 25%;
-margin-right: 25%;
-padding: 3px 3px;
-
+.itinerary .center-contain {
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 3px 3px;
 }
 
+.itinerary .btn {
+    display: block;
+    text-align: center;
+    margin-left: 33%;
+    margin-right: 33%;
+    margin-bottom: 20px;
+}
+
+.itinerary p {
+    text-align: center;
+    margin-bottom: 10px
+}
 
 #slider {
     position: relative;
@@ -783,24 +865,21 @@ padding: 3px 3px;
     height: 600px;
 }
 
-.slide ul{
-
-    margin-top:30px;
+.slide ul {
+    margin-top: 30px;
 }
 
-.slide li{
-padding-top: 4px;
-padding-bottom: 15px;
-color: #2B2B2E;
-line-height: 150%
-
+.slide li {
+    padding-top: 4px;
+    padding-bottom: 15px;
+    color: #2B2B2E;
+    line-height: 150%
 }
 
 .slide {
     position: absolute;
     width: 100%;
     height: 100%;
-    
     display: none;
 }
 
@@ -811,8 +890,16 @@ line-height: 150%
 #left-arrow, #right-arrow {
     position: absolute;
     font-size: 200%;
+    font-weight: 300;
     color: #000;
     cursor: pointer;
+    margin-top: 10%;
+}
+
+#left-arrow:hover, #right-arrow:hover {
+    font-size: 230%;
+    font-weight: 600;
+    color: rgba(33, 47, 145, 0.80);
 }
 
 #right-arrow {
@@ -821,5 +908,4 @@ line-height: 150%
 
 #left-arrow {
     left: 30px;
-    
 }
