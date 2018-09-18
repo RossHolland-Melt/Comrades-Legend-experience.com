@@ -788,6 +788,16 @@
 
                     </div>
 
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="subject">Subject</label>
+
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="subject" id="subject" placeholder="Subject" required>
+                        </div>
+
+                    </div>
 
                     <div class="row">
                         <div class="col span-1-of-3">
@@ -806,7 +816,7 @@
 
                         </div>
                         <div class="col span-2-of-3">
-                            <input type="submit" name="submit" value="Send">
+                            <input type="submit"  name="submit" value="Send">
                         </div>
 
                     </div>
